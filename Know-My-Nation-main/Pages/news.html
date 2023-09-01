@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="stylesheet" href="/styles/news-style.css" />
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.png" />
+  </head>
+  <body>
+    <nav>
+      <div class="main-nav container flex">
+        <a href="#" onclick="reload()" class="company-logo">
+          <h3>KnowMyNation</h3>
+        </a>
+        <div class="nav-links">
+          <ul class="flex">
+            <li
+              class="hover-link nav-item"
+              id="ipl"
+              onclick="onNavItemClick('sports')"
+            >
+              Sports
+            </li>
+            <li
+              class="hover-link nav-item"
+              id="finance"
+              onclick="onNavItemClick('finance')"
+            >
+              Finance
+            </li>
+            <li
+              class="hover-link nav-item"
+              id="business"
+              onclick="onNavItemClick('politics')"
+            >
+              Business
+            </li>
+          </ul>
+        </div>
+        <div class="search-bar flex">
+          <input
+            id="search-text"
+            type="text"
+            class="news-input"
+            placeholder="e.g. Science"
+          />
+          <button id="search-button" class="search-button">Search</button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <h1>HEADLINES</h1>
+      <div class="cards-container container flex" id="cards-container">
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="https://english.cdn.zeenews.com/sites/default/files/2023/07/21/1245420-indwiday2.jpg"
+              alt="news-image"
+              id="news-img"
+            />
+          </div>
+          <div class="card-content">
+            <h3 id="news-title">
+              IND: 288-4 (84) | IND VS WI 2nd Test, Day 2 LIVE Cricket Score and
+              Updates: Rohit Sharma Sets Big Re - Zee News
+            </h3>
+            <h6 class="news-source" id="news-source">
+              India.com · 7/21/2023, 9:23:12 AM
+            </h6>
+            <p class="news-desc" id="news-desc">
+              IND: 288-4 (84) | IND VS WI 2nd Test, Day 2 LIVE Cricket Score and
+              Updates: Virat Kohli Surpasses Ro
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="https://www.hindustantimes.com/ht-img/img/2023/07/20/1600x900/rain_8e133dce-0cb3-11eb-ad65-9c86ef2154a5_1689893252442.jpg"
+              alt="news-image"
+              id="news-img"
+            />
+          </div>
+          <div class="card-content">
+            <h3 id="news-title">
+              Mumbai rain news LIVE: ‘Red alert’ issued for Thane, Raigad, Pune,
+              and Palghar - Hindustan Times
+            </h3>
+            <h6 class="news-source" id="news-source">
+              Hindustan Times · 7/21/2023, 9:14:39 AM
+            </h6>
+            <p class="news-desc" id="news-desc">
+              Mumbai rain news LIVE updates: Schools will be shut in Thane and
+              Palghar for the next two days amid red alert by IMD.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="https://www.hindustantimes.com/ht-img/img/2023/07/21/1600x900/monsoon_prediction_rainfall_alert_imd_weather_1689902415361_1689902415576.jpg"
+              alt="news-image"
+              id="news-img"
+            />
+          </div>
+          <div class="card-content">
+            <h3 id="news-title">
+              Gujarat, Maharashtra to get more rain, no relief for Himachal
+              soon: IMD - Hindustan Times
+            </h3>
+            <h6 class="news-source" id="news-source">
+              Hindustan Times · 7/21/2023, 8:32:42 AM
+            </h6>
+            <p class="news-desc" id="news-desc">
+              Heavy rain showers will continue to occur in many states,
+              prompting authorities to take precautionary measures and close
+              schools temporarily. | Latest News India
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="https://c.ndtvimg.com/2022-10/7if755p_justice-dy-chandrachud_625x300_10_October_22.jpg"
+              alt="news-image"
+              id="news-img"
+            />
+          </div>
+          <div class="card-content">
+            <h3 id="news-title">
+              On Judge's Train Journey Complaint, Chief Justice's
+              "Self-Reflection" Tip - NDTV
+            </h3>
+            <h6 class="news-source" id="news-source">
+              NDTV News · 7/21/2023, 8:03:44 AM
+            </h6>
+            <p class="news-desc" id="news-desc">
+              Chief Justice of India DY Chandrachud has written to Chief
+              Justices of High Courts, taking exception to an instance of a
+              judge calling for "explanation" about the inconveniences he faced
+              during a train journey.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="https://c.ndtvimg.com/2023-07/bltcsi9_heatwave-heat-wave-afp_625x300_21_July_23.jpg"
+              alt="news-image"
+              id="news-img"
+            />
+          </div>
+          <div class="card-content">
+            <h3 id="news-title">
+              July May Be World's Hottest Month In "Hundreds Of Years", Says
+              NASA Expert - NDTV
+            </h3>
+            <h6 class="news-source" id="news-source">
+              NDTV News · 7/21/2023, 8:32:02 AM
+            </h6>
+            <p class="news-desc" id="news-desc">
+              July 2023 will probably be the world's hottest month in "hundreds,
+              if not thousands, of years," top NASA climatologist Gavin Schmidt
+              said Thursday.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="https://static.toiimg.com/thumb/msid-101848818,width-1070,height-580,imgsize-1054318,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
+              alt="news-image"
+              id="news-img"
+            />
+          </div>
+          <div class="card-content">
+            <h3 id="news-title">
+              MS Dhoni’s massive car/bike collection goes viral: Kawasaki Ninja
+              H2 to Apache RR 310 - IndiaTimes
+            </h3>
+            <h6 class="news-source" id="news-source">
+              The Times of India · 7/18/2023, 1:13:00 PM
+            </h6>
+            <p class="news-desc" id="news-desc">
+              News News: The video was posted by another former cricketer,
+              Venkatesh Prasad and gave a sneak peek into the cars and
+              motorcycles that Mahi has accumulated over
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="https://www.livemint.com/lm-img/img/2023/07/21/600x338/earthquake-tsunami_1653633400672_1689900021651.jpg"
+              alt="news-image"
+              id="news-img"
+            />
+          </div>
+          <div class="card-content">
+            <h3 id="news-title">
+              An earthquake of magnitude 4.4 strikes Rajasthan's Jaipur:
+              National Center for Seismology | Mint - Mint
+            </h3>
+            <h6 class="news-source" id="news-source">
+              Livemint · 7/21/2023, 6:27:30 AM
+            </h6>
+            <p class="news-desc" id="news-desc">
+              An earthquake of Magnitude 4.4 strikes Rajasthan's Jaipur:
+              National Center for Seismology
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/19-04-2023-NASA-Earth-Day.jpg/image770x420cropped.jpg"
+              alt="news-image"
+              id="news-img"
+            />
+          </div>
+          <div class="card-content">
+            <h3 id="news-title">
+              International Moon Day gives boost to peaceful cooperation in
+              space - UN News
+            </h3>
+            <h6 class="news-source" id="news-source">
+              UN News · 7/21/2023, 3:15:34 AM
+            </h6>
+            <p class="news-desc" id="news-desc">
+              The UN celebrated the second ever annual&nbsp;International Moon
+              Day on Thursday, promoting ongoing international cooperation in
+              the peaceful use of outer space while also honouring historic
+              achievements in space exploration.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="https://images.cnbctv18.com/wp-content/uploads/2023/04/Infosys-1019x573.jpg"
+              alt="news-image"
+              id="news-img"
+            />
+          </div>
+          <div class="card-content">
+            <h3 id="news-title">
+              Infosys ADR drops over 8% on Wall Street after full-year revenue
+              growth guidance cut - CNBCTV18
+            </h3>
+            <h6 class="news-source" id="news-source">
+              CNBCTV18 · 7/21/2023, 7:10:49 AM
+            </h6>
+            <p class="news-desc" id="news-desc">
+              Infosys now expects its current financial year revenue to grow
+              between 1 percent to 3.5 percent, a sharp cut from the 4-7 percent
+              growth in constant currency terms that it had projected during the
+              March quarter.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="https://static-koimoi.akamaized.net/wp-content/new-galleries/2023/07/deepika-padukones-first-look-poster-from-project-k-gets-a-massive-thumbs-down-netizens-call-prabhas-film-another-big-budget-disaster-troll-001.jpg"
+              alt="news-image"
+              id="news-img"
+            />
+          </div>
+          <div class="card-content">
+            <h3 id="news-title">
+              Deepika Padukone’s First Look Poster From Project K Gets A Massive
+              Thumbs Down, Netizens Call Prabhas’ Film Another Big Budget
+              Disaster &amp; Troll “Saale Asli Poster Jawan Ka Hai!” - Koimoi
+            </h3>
+            <h6 class="news-source" id="news-source">
+              Koimoi · 7/18/2023, 1:00:02 PM
+            </h6>
+            <p class="news-desc" id="news-desc">
+              Deepika Padukone Project K look gets attacked by netizens who ask
+              if the Prabhas film has 600 crores riding on this look. See
+              reactions.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="https://images.hindustantimes.com/tech/img/2023/07/18/1600x900/pexels-lisa-fotios-1092644_1689659627064_1689659636635.jpg"
+              alt="news-image"
+              id="news-img"
+            />
+          </div>
+          <div class="card-content">
+            <h3 id="news-title">
+              Users being tricked into installing malicious bank account apps!
+              Know 4 ways to stay safe - HT Tech
+            </h3>
+            <h6 class="news-source" id="news-source">
+              Hindustan Times · 7/18/2023, 12:55:06 PM
+            </h6>
+            <p class="news-desc" id="news-desc">
+              After Google Play Store launched a crackdown, cybercriminals have
+              turned their attention elsewhere and are now exploiting WebAPKs to
+              trick users into installing malicious apps.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="https://img.etimg.com/thumb/msid-101847002,width-1070,height-580,imgsize-200914,overlay-economictimes/photo.jpg"
+              alt="news-image"
+              id="news-img"
+            />
+          </div>
+          <div class="card-content">
+            <h3 id="news-title">
+              Swelling Yamuna reaches iconic Taj Mahal walls after 45 years,
+              floods garden - Economic Times
+            </h3>
+            <h6 class="news-source" id="news-source">
+              The Times of India · 7/18/2023, 12:22:00 PM
+            </h6>
+            <p class="news-desc" id="news-desc">
+              The recent heavy rains causing a surge in the Yamuna river's water
+              level have touched the walls of the Taj Mahal, submerging a
+              garden, which is unseen for 45 years. But the Archaeological
+              Survey of India (ASI) reassured that other historical monuments
+              had not…
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="https://www.financialexpress.com/wp-content/uploads/2023/07/met.jpg"
+              alt="news-image"
+              id="news-img"
+            />
+          </div>
+          <div class="card-content">
+            <h3 id="news-title">
+              Rare strike! Woman hit by meteorite while having coffee on terrace
+              in France - The Financial Express
+            </h3>
+            <h6 class="news-source" id="news-source">
+              Financial Express · 7/18/2023, 12:46:13 PM
+            </h6>
+            <p class="news-desc" id="news-desc">
+              The first confirmed case of a meteorite hitting a person directly
+              reportedly occurred in the US nearly 70 years ago. In November
+              1954, an 8-pound stony meteorite hit Ann Hodges of Sylacauga in
+              Alabama. Ann was left with severe bruising.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="https://timesofindia.indiatimes.com/photo/msid-101846804,imgsize-584614.cms"
+              alt="news-image"
+              id="news-img"
+            />
+          </div>
+          <div class="card-content">
+            <h3 id="news-title">
+              "Hindenburg report aimed at damaging our image", says Gautam Adani
+              in Annual General Meeting 2023 | TOI Original - Times of India
+              Videos - Times of India
+            </h3>
+            <h6 class="news-source" id="news-source">
+              The Times of India · 7/18/2023, 12:12:08 PM
+            </h6>
+            <p class="news-desc" id="news-desc">
+              Gautam Adani, Chairman of Adani Group, referred to the Hindenburg
+              report as a mix of targeted misinformation and discredited
+              allegations, with most of them dating from 2004 to 2015, which
+              were already resolved by authorities at that time. He
+              characterized the…
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="https://www.livemint.com/lm-img/img/2023/07/18/600x338/gg_1668573752178_1689655589769.png"
+              alt="news-image"
+              id="news-img"
+            />
+          </div>
+          <div class="card-content">
+            <h3 id="news-title">
+              Garena Free Fire Max redeem codes for July 18, 2023: Claim daily
+              free rewards | Mint - Mint
+            </h3>
+            <h6 class="news-source" id="news-source">
+              Livemint · 7/18/2023, 11:47:19 AM
+            </h6>
+            <p class="news-desc" id="news-desc">
+              Garena Free Fire Max has released new redeem codes for players to
+              claim in-game rewards. These codes are only available for a
+              limited time and limited to the first 500 users. Players can
+              redeem the codes on the game's official Rewards Redemption site.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <template id="template-news-card">
+      <div class="card">
+        <div class="card-header">
+          <img
+            src="https://via.placeholder.com/400x200"
+            alt="news-image"
+            id="news-img"
+          />
+        </div>
+        <div class="card-content">
+          <h3 id="news-title">This is the Title</h3>
+          <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+          <p class="news-desc" id="news-desc">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            saepe quis voluptatum quisquam vitae doloremque facilis molestias
+            quae ratione cumque!
+          </p>
+        </div>
+      </div>
+    </template>
+
+    <script src="/scripts/script-news.js"></script>
+  </body>
+</html>
